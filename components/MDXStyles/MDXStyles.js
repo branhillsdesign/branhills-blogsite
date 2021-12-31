@@ -1,9 +1,9 @@
 const CustomCode = (props) => {
-  return <code style={{ backgroundColor: 'lightblue' }} {...props} />;
+  return <code style={{ backgroundColor: '#000000' }} {...props} />;
 };
 
 const MDXStyles = {
-  p: (props) => <p style={{ fontSize: '25px' }} {...props} />,
+  p: (props) => <p style={{ fontSize: '16px' }} {...props} />,
   inlineCode: CustomCode,
 };
 
