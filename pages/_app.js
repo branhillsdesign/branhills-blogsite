@@ -1,7 +1,7 @@
 import { MDXProvider } from '@mdx-js/react';
 import MDXStyles from '../components/MDXStyles/MDXStyles';
 import { Container } from '../components/Container';
-import GlobalStyle from '../styles/globalStyles';
+import GlobalStyle, { darkTheme, lightTheme } from '../styles/ThemeConfig';
 
 function MyApp({ Component, pageProps }) {
   return (
