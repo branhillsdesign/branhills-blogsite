@@ -1,20 +1,26 @@
 const CustomCode = (props) => {
   return (
-    <code
-      style={{
-        margin: '0.5em 0',
-        padding: '0.5em',
-        lineHeight: '2.0em',
-        fontSize: '1.2em',
-        fontWeight: 'bold',
-      }}
-      {...props}
-    />
+    <>
+      <pre
+        style={{
+          borderRadius: '0.5rem',
+          border: '2px solid #000000',
+          overflowX: 'scroll',
+          padding: '0.5rem',
+        }}
+      />
+      <code
+        style={{
+          fontSize: '0.8rem',
+          color: '#ffffff',
+        }}
+      ></code>
+    </>
   );
 };
 
 const MDXStyles = {
-  p: (props) => <p style={{ fontSize: '16px' }} {...props} />,
+  p: (props) => <p style={{ fontSize: '18px' }} {...props} />,
   pre: (props) => <CustomCode {...props} />,
   code: (props) => <CustomCode {...props} />,
 };
