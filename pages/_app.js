@@ -1,13 +1,14 @@
-import { Container } from '../components/Container';
-import GlobalStyle, { darkTheme, lightTheme } from '../styles/ThemeConfig';
+import { ThemeProvider } from 'styled-components';
+import GlobalStyle from '../styles/GlobalStyle';
+import theme from '../styles/ThemeProvider';
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Container>
+      <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Component {...pageProps} />
-      </Container>
+      </ThemeProvider>
     </>
   );
 }
