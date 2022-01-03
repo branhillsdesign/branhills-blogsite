@@ -12,5 +12,16 @@ const GlobalStyle = createGlobalStyle`
     color: ${(props) => theme.colors.text};
     width: ${(props) => theme.breakpoints.xs};
   }
+  pre {
+    background-color: #000000;
+    padding: 3rem;
+    border-radius: 1rem;
+    overflow-x: auto;
+  }
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
 `;
 export default GlobalStyle;
